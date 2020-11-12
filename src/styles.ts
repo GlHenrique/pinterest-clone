@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
         scroll-behavior: smooth;
     }
 
-    h1, h2, h3, h4, h5, p, li {
+    h1, h2, h3, h4, h5, p, li, a {
         font-family: 'Open Sans', sans-serif;
         -webkit-font-smoothing: antialiased;
     }

@@ -1,11 +1,16 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, {
+  useState, useCallback, useEffect,
+} from 'react';
 import Arrow from '../Arrow';
 import ButtonScroll from '../ButtonScroll';
+import Image from '../ImageGrid';
 
-import { MasonryContainer, Grid, ButtonScrollContainer } from './styles';
+import {
+  MasonryContainer, Grid, ButtonScrollContainer,
+} from './styles';
 
 const Masonry: React.FC = () => {
-  const [scrollTop, setScrollTop] = useState(true);
+  const [scrollTop, setScrollTop] = useState(false);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -31,7 +36,7 @@ const Masonry: React.FC = () => {
   return (
     <MasonryContainer>
       <Grid>
-        <img alt="Grid" src="https://source.unsplash.com/random/1" />
+        <Image alt="Grid" src="https://source.unsplash.com/random/1" />
         <div className="body">
           <div className="relative">
             <h1 className="title">Title 1</h1>
@@ -45,7 +50,7 @@ const Masonry: React.FC = () => {
         </div>
       </Grid>
       <Grid>
-        <img alt="Grid" src="https://source.unsplash.com/random/2" />
+        <Image alt="Grid" src="https://source.unsplash.com/random/2" />
         <div className="body">
           <div className="relative">
             <h1 className="title">Title 1</h1>
@@ -57,7 +62,7 @@ const Masonry: React.FC = () => {
         </div>
       </Grid>
       <Grid>
-        <img alt="Grid" src="https://source.unsplash.com/random/3" />
+        <Image alt="Grid" src="https://source.unsplash.com/random/3" />
         <div className="body">
           <div className="relative">
             <h1 className="title">Title 1</h1>
@@ -69,7 +74,7 @@ const Masonry: React.FC = () => {
         </div>
       </Grid>
       <Grid>
-        <img alt="Grid" src="https://source.unsplash.com/random/4" />
+        <Image alt="Grid" src="https://source.unsplash.com/random/4" />
         <div className="body">
           <div className="relative">
             <h1 className="title">Title 1</h1>
@@ -81,7 +86,7 @@ const Masonry: React.FC = () => {
         </div>
       </Grid>
       <Grid>
-        <img alt="Grid" src="https://source.unsplash.com/random/5" />
+        <Image alt="Grid" src="https://source.unsplash.com/random/5" />
         <div className="body">
           <div className="relative">
             <h1 className="title">Title 1</h1>
@@ -93,7 +98,7 @@ const Masonry: React.FC = () => {
         </div>
       </Grid>
       <Grid>
-        <img alt="Grid" src="https://source.unsplash.com/random/6" />
+        <Image alt="Grid" src="https://source.unsplash.com/random/6" />
         <div className="body">
           <div className="relative">
             <h1 className="title">Title 1</h1>
@@ -105,7 +110,7 @@ const Masonry: React.FC = () => {
         </div>
       </Grid>
       <Grid>
-        <img alt="Grid" src="https://source.unsplash.com/random/7" />
+        <Image alt="Grid" src="https://source.unsplash.com/random/7" />
         <div className="body">
           <div className="relative">
             <h1 className="title">Title 1</h1>
@@ -117,7 +122,7 @@ const Masonry: React.FC = () => {
         </div>
       </Grid>
       <Grid>
-        <img alt="Grid" src="https://source.unsplash.com/random/8" />
+        <Image alt="Grid" src="https://source.unsplash.com/random/8" />
         <div className="body">
           <div className="relative">
             <h1 className="title">Title 1</h1>
@@ -129,7 +134,7 @@ const Masonry: React.FC = () => {
         </div>
       </Grid>
       <Grid>
-        <img alt="Grid" src="https://source.unsplash.com/random/9" />
+        <Image alt="Grid" src="https://source.unsplash.com/random/9" />
         <div className="body">
           <div className="relative">
             <h1 className="title">Title 1</h1>
@@ -141,7 +146,7 @@ const Masonry: React.FC = () => {
         </div>
       </Grid>
       <Grid>
-        <img alt="Grid" src="https://source.unsplash.com/random/10" />
+        <Image alt="Grid" src="https://source.unsplash.com/random/10" />
         <div className="body">
           <div className="relative">
             <h1 className="title">Title 1</h1>
@@ -153,7 +158,7 @@ const Masonry: React.FC = () => {
         </div>
       </Grid>
       <Grid>
-        <img alt="Grid" src="https://source.unsplash.com/random/11" />
+        <Image alt="Grid" src="https://source.unsplash.com/random/11" />
         <div className="body">
           <div className="relative">
             <h1 className="title">Title 1</h1>
@@ -165,7 +170,7 @@ const Masonry: React.FC = () => {
         </div>
       </Grid>
       <Grid id="last">
-        <img alt="Grid" src="https://source.unsplash.com/random/12" />
+        <Image alt="Grid" src="https://source.unsplash.com/random/12" />
         <div className="body">
           <div className="relative">
             <h1 className="title">Title 1</h1>
