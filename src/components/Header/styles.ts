@@ -6,6 +6,10 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 16px;
+
+  @media(max-width: 635px) {
+    flex-direction: column;
+  }
 `;
 
 export const LogoContainer = styled.div`

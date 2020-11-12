@@ -8,6 +8,7 @@ const App: React.FC = () => (
     <GlobalStyle />
     <Header />
     <Main />
+
   </>
 );
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Button';
+import ButtonRounded from '../ButtonRounded';
 import Links from '../Links';
 import { colors } from '../../theme';
 
@@ -19,18 +19,18 @@ const Header: React.FC = () => (
     </LogoContainer>
     <NavigationMenuContainer>
       <Links />
-      <Button
+      <ButtonRounded
         backgroundColor={colors.red}
         color="white"
       >
         Entrar
-      </Button>
-      <Button
+      </ButtonRounded>
+      <ButtonRounded
         backgroundColor={colors.gray}
         color="black"
       >
         Criar Conta
-      </Button>
+      </ButtonRounded>
     </NavigationMenuContainer>
   </Container>
 );

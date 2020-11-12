@@ -3,7 +3,7 @@ import React from 'react';
 import { Container, ButtonComponent } from './styles';
 import { Props } from './types';
 
-const Button: React.FC<Props> = ({ backgroundColor, children, color }) => (
+const ButtonRounded: React.FC<Props> = ({ backgroundColor, children, color }) => (
   <Container>
     <ButtonComponent
       color={color}
@@ -14,4 +14,4 @@ const Button: React.FC<Props> = ({ backgroundColor, children, color }) => (
   </Container>
 );
 
-export default Button;
+export default ButtonRounded;
