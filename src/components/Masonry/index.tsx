@@ -12,21 +12,7 @@ import {
 const Masonry: React.FC = () => {
   const [scrollTop, setScrollTop] = useState(false);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const scrollToBottom = () => {
-    const clientHeight = document.body.scrollHeight;
-    window.scrollTo({ top: clientHeight, behavior: 'smooth' });
-  };
-
   useEffect(() => {
-    // if (!scrollTop) {
-    //   scrollToTop();
-    //   return;
-    // }
-    // scrollToBottom();
     const top = scrollTop ? document.body.scrollHeight : 0;
     window.scrollTo({ top, behavior: 'smooth' });
   }, [scrollTop]);
