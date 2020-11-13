@@ -17,16 +17,18 @@ const Masonry: React.FC = () => {
   };
 
   const scrollToBottom = () => {
-    const clientHeight = document.getElementById('root')?.clientHeight;
+    const clientHeight = document.body.scrollHeight;
     window.scrollTo({ top: clientHeight, behavior: 'smooth' });
   };
 
   useEffect(() => {
-    if (!scrollTop) {
-      scrollToTop();
-      return;
-    }
-    scrollToBottom();
+    // if (!scrollTop) {
+    //   scrollToTop();
+    //   return;
+    // }
+    // scrollToBottom();
+    const top = scrollTop ? document.body.scrollHeight : 0;
+    window.scrollTo({ top, behavior: 'smooth' });
   }, [scrollTop]);
 
   const handleScroll = useCallback(() => {
