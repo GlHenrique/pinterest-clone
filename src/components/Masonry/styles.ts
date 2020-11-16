@@ -23,10 +23,25 @@ export const wait = keyframes`
   }
 `;
 
+const shake = keyframes`
+  from {
+    transform: translateY(0)
+  }
+
+  to {
+    transform: translateY(90px);
+  }
+`;
+
 export const Grid = styled.div`
   display: inline-block;
   margin-bottom: 16px;
   position: relative;
+  animation-name: ${shake};
+  animation-duration: 0.8s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+
   &:before {
     border-radius: 5px;
     content: "";
@@ -37,44 +52,6 @@ export const Grid = styled.div`
     left: 0;
     background-color: rgba(0, 0, 0, 0.2);
   }
-  .title {
-    font-size: 28px;
-    font-weight: bold;
-    margin: 0px 0px 10px 0px;
-  }
-  .author {
-    font-size: 14px;
-    font-weight: 300;
-  }
-  .link {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-  }
-  .body {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding: 30px 30px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-
-    .mt-auto {
-      margin-top: auto;
-    }
-  }
-  .tag {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #333;
-    border-radius: 5px;
-    padding: 5px 15px;
-    margin-bottom: 5px;
-    }
 `;
 
 const floating = keyframes`

@@ -6,7 +6,7 @@ import { GlobalStyle } from './styles';
 const App: React.FC = () => (
   <>
     <GlobalStyle />
-    <Header />
+    <Header data-testid="header" />
     <Main />
   </>
 );
